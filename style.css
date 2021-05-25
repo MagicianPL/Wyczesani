@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: quicksand;
+	color: black;
+	width: 100%;
+	min-height: 100vh;
+	width: 100%;
+	padding: 0 1rem 0 1rem;
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	min-height: 100vh;
+}
+
+.photos {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+#photos-woman > img {
+	opacity: 0;
+	animation: appearing-woman;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
+#photos-man > img {
+	opacity: 0;
+	animation: appearing-man;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
+@keyframes appearing-woman {
+	0% {
+		transform: translateX(-100px);
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes appearing-man {
+	0% {
+		transform: translateX(100px);
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes appearing {
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+#title {
+	display: flex;
+	flex-direction: column;
+	flex: 1.5;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	font-size: 5rem;
+	font-weight: bold;
+	padding: 1rem;
+	position: relative;
+}
+
+#great-hair {
+	opacity: 0;
+	animation: appearing;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+#great-you {
+	color: red;
+	opacity: 0;
+	animation: appearing;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+
+button {
+	margin-top: 3rem;
+	width: 40%;
+	height: 5rem;
+	background-color: white;
+	border-radius: 30px;
+	outline: none;
+	border: 1px solid black;
+	font-size: 2.4rem;
+	cursor: pointer;
+	opacity: 0;
+	animation: appearing;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+button:hover {
+	border: 3px dashed black;
+}
+
+img {
+	width: 80%;
+	border: 5px solid white;
+	position: absolute;
+}
+
+#img1 {
+	transform: rotate(130deg);
+
+}
+
+#img2 {
+	transform: rotate(280deg);
+}
+
+#img3 {
+	transform: rotate(340deg);
+}
+
+#img4 {
+	transform: rotate(30deg);
+	width: 60%;
+}
+
+#img4:hover {
+	width: 70%;
+	transform: rotate(20deg);
+	transition-duration: 2s;
+}
+
+#img5 {
+	transform: rotate(45deg);
+}
+
+#img6 {
+	transform: rotate(320deg);
+}
+
+#img7 {
+	transform: rotate(20deg);
+}
+
+#img8 {
+	transform: rotate(350deg);
+}
+
+#img8:hover {
+	width: 90%;
+	transform: rotate(365deg);
+	transition-duration: 2s;
+}
+
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+ 
+@media (min-width: 320px) and (max-width: 480px) {
+	html {
+		font-size: 45%;
+	}
+	
+	main {
+		flex-direction: column;
+		position: relative;
+	}
+	
+	img {
+		width: 30rem;
+		z-index: -10;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	html {
+		font-size: 45%;
+	}
+	
+	button {
+		width: 100%;
+	}
+	
+	.photos {
+		flex: 2;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	button {
+		width: 90%;
+	}
+}
+
+@media (min-width: 1600px) {
+	html {
+		font-size: 70%;
+	}
+	
+	#title {
+		flex: 1.5;
+	}
+	
+	button {
+		width: 60%;
+	}
+}
