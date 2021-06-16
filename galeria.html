@@ -6,16 +6,13 @@
 		<meta name="keywords" content="">
 		<meta name="" content="...">
 		 <link href="style_galeria.css" rel="stylesheet" >
-		 <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+		 <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<script src="galeria-main.js" defer></script>
 		<title>Wyczesani - Studio Fryzjerskie</title>
 	</head>
 	
 	<body>
-		<header>
-			<h1>Wyczesani</h1>
-			<h2>Fryzjerstwo Artystyczne</h2>
-			<img src="scissors.jpg" alt="ikona nożyczek">
-		</header>
 		<nav>
 			<ul>
 				<li><a href="o_nas.html">O nas</a></li>
@@ -24,8 +21,13 @@
 				<li><a href="kontakt.html">Kontakt</a></li>
 			</ul>
 		</nav>
+		<header>
+			<h1>Wyczesani</h1>
+			<h2>Fryzjerstwo Artystyczne</h2>
+			<span>W</span>
+		</header>
 		<main>
-			<p id="cytat">,,Zadowolony klient, to najlepsza strategia biznesowa.''<br>- Michael LeBoeuf</p>
+			<div><p id="cytat">,,Zadowolony klient, to najlepsza strategia biznesowa.''<br>- Michael LeBoeuf</p></div>
 			<div id="row1">
 				<img id="img1" src="woman/1.jpg">
 				<img id="img5" src="man/1.jpg">
@@ -40,5 +42,7 @@
 				<img id="img2" src="woman/woman.jpg">
 				<img id="img4" src="woman/4.jpg">
 			</div>
+			<a href="kontakt.html"><div id="button">Znajdź nas! <img src="marker-128.png"></div></a>
 		</main>
+		<footer><a href="#"><span>&#8593;</span></a></footer>
 	</body>
