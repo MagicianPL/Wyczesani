@@ -153,7 +153,6 @@ li:hover {
 
 main {
 	width: 90%;
-	min-height: 100vh;
 	margin: 0 auto;
 	box-sizing: border-box;
 	padding: 8rem 2rem 2rem 2rem;
@@ -162,11 +161,15 @@ main {
 	text-align: center;
 }
 
-main > p {
+#container {
+	overflow-y: hidden;
+}
+
+main p {
 	margin: 2.5rem 0 2.5rem 0;
 }
 
-main p:nth-child(5) {
+main > p:nth-child(2) {
 	font-weight: bold;
 	color: red;
 }
@@ -206,7 +209,7 @@ main p:nth-child(5) {
 
 #man-and-woman > div {
 	width: 100%;
-	min-height: 40rem;
+	min-height: 45rem;
 	box-sizing: border-box;
 	padding: 3rem 6rem 3rem 6rem;
 	display: flex;
@@ -240,7 +243,7 @@ main p:nth-child(5) {
 
 
 #stars {
-	margin-top: 490px;
+	margin-top: 49rem;
 	font-weight: bold;
     width: 80%;
     margin: 0 auto;
@@ -250,7 +253,7 @@ main p:nth-child(5) {
 	margin-bottom: 2.5rem;
 }
 
-main p:nth-child(8) {
+main p:nth-child(5) {
 	margin-bottom: 5rem;
 }
 
@@ -305,7 +308,13 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
  }
  
-@media (min-width: 320px) and (max-width: 480px) {
+ @media (min-width: 320px) and (max-width: 480px) {
+	html {
+		font-size: 32%;
+	}
+ }
+ 
+/*@media (min-width: 320px) and (max-width: 480px) {
 	html {
 		font-size: 32%;
 	}
@@ -325,4 +334,4 @@ a, a:hover, a:visited, a:active {
 	html {
 		font-size: 80%;
 	}
-}
+}*/
