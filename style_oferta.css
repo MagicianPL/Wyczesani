@@ -204,6 +204,7 @@ main > p:nth-child(5) {
 	inset: 0;
 	background-image: url("flex.jpg");
 	background-size: cover;
+	background-attachment: fixed;
 	opacity: 0.2;
 }
 
@@ -308,15 +309,13 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
  }
  
- @media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
 	html {
 		font-size: 32%;
 	}
- }
- 
-/*@media (min-width: 320px) and (max-width: 480px) {
-	html {
-		font-size: 32%;
+	
+	#man-and-woman::before {
+		background-attachment: scroll;
 	}
 	
 	#stars {
@@ -328,10 +327,20 @@ a, a:hover, a:visited, a:active {
 	html {
 		font-size: 40%;
 	}
+	
+	#man-and-woman::before {
+		background-attachment: scroll;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	#man-and-woman::before {
+		background-attachment: scroll;
+	}
 }
 
 @media (min-width: 1600px) {
 	html {
 		font-size: 80%;
 	}
-}*/
+}
