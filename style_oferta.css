@@ -162,7 +162,7 @@ main {
 }
 
 #container {
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
 main p {
