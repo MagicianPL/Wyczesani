@@ -10,9 +10,13 @@ html {
 
 body {
 	font-family: 'Raleway', sans-serif;
-	overflow-x: hidden;
 	padding-top: 3rem;
+}
+
+#container-overflow-hidden {
+	width: 100%;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 header {
@@ -161,15 +165,11 @@ main {
 	text-align: center;
 }
 
-#container {
-	overflow: hidden;
-}
-
 main p {
 	margin: 2.5rem 0 2.5rem 0;
 }
 
-main > p:nth-child(2) {
+main > p:nth-child(5) {
 	font-weight: bold;
 	color: red;
 }
@@ -253,7 +253,7 @@ main > p:nth-child(2) {
 	margin-bottom: 2.5rem;
 }
 
-main p:nth-child(5) {
+main p:nth-child(8) {
 	margin-bottom: 5rem;
 }
 
