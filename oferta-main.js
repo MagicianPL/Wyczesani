@@ -25,7 +25,7 @@ const man = document.querySelector("#man");
 
 })();
 
-window.addEventListener("scroll", ()=> {
+window.addEventListener("load", ()=> {
 	let divideFirstRect = divideFirst.getBoundingClientRect();
 	let divideFirstY = divideFirstRect.bottom;
 	console.log(divideFirstY);
@@ -37,7 +37,9 @@ window.addEventListener("scroll", ()=> {
 		firstP.classList.add("divides-appearing");
 		secondP.classList.add("divides-appearing");
 	};
-	
+})
+
+window.addEventListener("scroll", ()=> {
 	let womanRect = woman.getBoundingClientRect();
 	let womanY = womanRect.bottom;
 	

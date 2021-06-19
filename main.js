@@ -1,7 +1,9 @@
-const element = document.querySelector("section p:nth-child(4)");
+const element = document.querySelector("section p:nth-child(5)");
 const strong = document.querySelector(".strong");
 const bgtext = document.querySelector(".bgone");
 const bgjpg = document.querySelector(".bgtwo");
+const wholeCircleDiv = document.querySelector("#circles");
+const circles = document.querySelectorAll(".circle");
 
 const woman = document.querySelector("#woman");
 const man = document.querySelector("#man");
@@ -22,4 +24,12 @@ window.addEventListener("scroll", ()=> {
 		strong.classList.add("colorchange");
 		bgjpg.classList.add("fromleft");
 	};
+	
+	const rectWholeCircleDiv = wholeCircleDiv.getBoundingClientRect();
+	const yWholeCircles = rectWholeCircleDiv.bottom;
+	
+	if (yWholeCircles < window.innerHeight) {
+		for (i=0; i < circles.length; i++)
+			circles[i].classList.add("circle-animation");
+	}
 });

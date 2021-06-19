@@ -114,7 +114,7 @@ main {
 }
 
 #great-you {
-	color: red;
+	color: #4c597a;
 	opacity: 0;
 	animation: appearing;
 	animation-duration: 2s;

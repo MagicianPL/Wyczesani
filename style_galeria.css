@@ -21,10 +21,13 @@ header {
 	text-align: center;
 	padding-top: 3rem;
 	box-sizing: border-box;
+	position: relative;
 }
 
 h1 {
-	font-size: 10rem;
+	font-size: 16rem;
+	font-family: SilverBellyButton;
+	color: #4c597a;
 	opacity: 0;
 	animation: appearing-top;
 	animation-duration: 1s;
@@ -52,7 +55,7 @@ h1 {
 
 h2 {
 	font-size: 2.4rem;
-	color: red;
+	color: #4c597a;
 	margin: 2rem auto 2rem auto;
 	opacity: 0;
 	animation: appearing-bottom;
@@ -60,6 +63,10 @@ h2 {
 	/*animation-delay: 0.5s;*/
 	animation-fill-mode: forwards;
 	z-index: 2;
+	position: absolute;
+	top: 22rem;
+	left: 47%;
+	color: grey;
 }
 
 @keyframes appearing-bottom {
@@ -80,13 +87,6 @@ h2 {
 	animation-fill-mode: forwards;
 }
 
-header > span {
-    margin: 2rem auto 0 auto;
-	font-size: 4.5rem;
-	margin-top: 2rem;
-	color: red;
-	animation: textshadow 3s forwards;
-}
 
 @keyframes textshadow {
 	100% {
@@ -103,7 +103,7 @@ ul {
 }
 
 li:nth-child(3) {
-	color: red;
+	color: #4c597a;
 }
 
 li {
@@ -123,7 +123,7 @@ li {
 }
 
 li:hover {
-    color: red;
+    color: #4c597a;
     font-style: italic;
     cursor: pointer;
 }
@@ -173,7 +173,7 @@ main > div:nth-child(1)::before {
 
 .appearing {
 	animation: appearing 1.5s forwards;
-	animation-delay: 0.5s;
+	animation-delay: 1s;
 }
 
 main img {
@@ -223,13 +223,11 @@ main img {
 }
 
 #button {
-	width: 30rem;
-	height: 7rem;
+	width: 23rem;
+	height: 6rem;
 	margin: 0 auto;
 	margin-bottom: 3rem;
-	font-size: 3.5rem;
-	text-align: center;
-	line-height: 7rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 	-webkit-border-radius: 35px;
 	-moz-border-radius: 35px;
@@ -237,6 +235,9 @@ main img {
 	-webkit-box-shadow: 3px 3px 14px -1px rgba(0,0,0,0.92); 
 	box-shadow: 3px 3px 14px -1px rgba(0,0,0,0.92);
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.91);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #button:hover {
@@ -248,8 +249,6 @@ main img {
 	border: none;
 	height: 4rem;
 	width: 4rem;
-	margin: 1rem 0 0 0;
-	display: inline;
 }
 
 footer {
@@ -271,6 +270,15 @@ footer span:hover {
 @media (min-width: 320px) and (max-width: 480px) {
 	html {
 		font-size: 32%;
+	}
+	
+	h1 {
+		font-size: 15rem;
+	}
+	
+	h2 {
+		top: 21rem;
+		left: 43%;
 	}
 	
 	main > div > img {
@@ -330,3 +338,9 @@ a, a:hover, a:visited, a:active {
   color: inherit;
   text-decoration: none;
  }
+ 
+ 
+ @font-face {
+  font-family:"SilverBellyButton";
+  src: url("SilverBellyButton.ttf") format("truetype");
+}
